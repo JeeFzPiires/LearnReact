@@ -1,6 +1,9 @@
 import './App.css'
 import React from "react";
 
+import Contador from './components/contador/Contador';
+import Input from './components/formulario/Input';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ParOuImpar from './components/condicional/ParOuImpar';
@@ -14,6 +17,7 @@ import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmentos';
 
+
 export default (_) => (
     <div className="App">
         <h1>Fundamentos React</h1>
@@ -21,6 +25,15 @@ export default (_) => (
 
 
         <div className="Cards">
+            <Card titulo="#12 - Contador" color="#d9d9d9">
+                <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
+                <Input></Input>
+            </Card>
+            <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
             <Card titulo="#09 - Comunicação Direta" color="#982595">
                 <DiretaPai></DiretaPai>
             </Card>
